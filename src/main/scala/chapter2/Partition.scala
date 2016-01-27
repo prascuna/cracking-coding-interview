@@ -4,7 +4,6 @@ package chapter2
   * Created by prascuna on 24/01/2016.
   */
 object Partition {
-  //def verify[Int](list: LinkedList[Int], partition: Int): LinkedList[Int] = {
   def verify[T](list: LinkedList[T], partition: T)(implicit n: Numeric[T]): LinkedList[T] = {
     import n._
     var node: Option[Node[T]] = list.head
@@ -32,14 +31,4 @@ object Partition {
 
 
   }
-
-  def printList[T](list: LinkedList[T]): String = printNode(list.head)
-
-  def printNode[T](node: Option[Node[T]]): String =
-    if (node.isDefined) {
-      node.get.value + " -> " + printNode(node.get.next)
-    } else {
-      " . "
-    }
-
 }

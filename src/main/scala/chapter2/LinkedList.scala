@@ -18,3 +18,14 @@ case class LinkedList[T](var head: Option[Node[T]] = None) {
   def isEmpty = head.isDefined
 
 }
+
+object LinkedList {
+  def printList[T](list: LinkedList[T]): String = printNode(list.head)
+
+  def printNode[T](node: Option[Node[T]]): String =
+    if (node.isDefined) {
+      node.get.value + " -> " + printNode(node.get.next)
+    } else {
+      " . "
+    }
+}
