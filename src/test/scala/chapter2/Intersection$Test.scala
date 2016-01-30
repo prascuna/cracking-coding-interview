@@ -1,6 +1,5 @@
-package chapter1
+package chapter2
 
-import chapter2.{Node, LinkedList}
 import org.scalatest.Matchers
 import org.scalatest.path.FunSpec
 

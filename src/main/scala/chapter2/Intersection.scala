@@ -1,6 +1,4 @@
-package chapter1
-
-import chapter2.{Node, LinkedList}
+package chapter2
 
 /**
   * Created by prascuna on 29/01/2016.
